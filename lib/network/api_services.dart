@@ -80,6 +80,25 @@ Future<List<Chat>> submitGetChatsForm({
   }
   return chatList;
 }
+Future<int> submitLoginForm({
+  required String email,
+  required String password,
+}) async {
+  //
+  NetworkClient networkClient = NetworkClient();
+  int mp = 0;
+  try {
+    final res = await networkClient.get(
+      "https://x.ioevisa.net/api.php?ai=1&email="+email+"&password="+password,
+    );
+    int mp = jsonDecode(res.toString());
+    return mp;
+  } on RemoteException catch (e) {
+    // Logger().e(e.dioError);
+    // errorMessage(context);
+  }
+  return mp;
+}
 
 Future<List<Model>> submitGetModelsForm({
   required BuildContext context,

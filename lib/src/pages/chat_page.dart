@@ -43,7 +43,7 @@ class _ChatPageState extends State<ChatPage> {
 
   void initPrefs() async {
     prefs = await SharedPreferences.getInstance();
-    tokenValue = prefs.getInt("token") ?? 1;
+    tokenValue = prefs.getInt("token") ?? 500;
   }
 
   TextEditingController mesageController = TextEditingController();
@@ -95,7 +95,7 @@ class _ChatPageState extends State<ChatPage> {
                 ),
               ),
               const Text(
-                'Chat GPT',
+                'Chat IOE',
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

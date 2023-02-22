@@ -1,6 +1,6 @@
 // ignore_for_file: non_constant_identifier_names
 
-String OPEN_API_KEY = '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';
+String OPEN_API_KEY = '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';
 
 String BASE_URL = 'https://api.openai.com/v1/';
 String ANDROID_INTERSTITIAL_ADD_ID = 'ca-app-pub-3940256099942544/1033173712';

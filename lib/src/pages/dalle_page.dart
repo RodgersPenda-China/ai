@@ -44,7 +44,7 @@ class _DallePageState extends State<DallePage> {
           ),
         ),
         title: const Text(
-          'Chat GPT',
+          'Generate Image',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
